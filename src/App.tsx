@@ -1,6 +1,7 @@
 import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 const App = () => {
 	const personName = {
@@ -28,7 +29,9 @@ const App = () => {
 			<Greet name="Apel Mahmud" messageCount={10} isLoggedIn={false} />
 			<Person name={personName} />
 			<PersonList names={nameList} />
+			<Status status="loading" />
 		</div>
 	);
 };
+
 export default App;
